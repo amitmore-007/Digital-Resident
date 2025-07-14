@@ -1,19 +1,19 @@
 {
+  "framework": "vite",
   "buildCommand": "npm run build",
   "outputDirectory": "build",
-  "installCommand": "npm install --production=false",
-  "framework": "vite",
   "rewrites": [
     {
       "source": "/(.*)",
       "destination": "/index.html"
     }
   ],
-  "functions": {
+
+
     "src/pages/api/**/*.js": {
       "runtime": "nodejs18.x"
     }
-  },
+  ,
   "regions": ["iad1"],
   "build": {
     "env": {
