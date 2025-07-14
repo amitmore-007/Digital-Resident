@@ -8,18 +8,17 @@
       "destination": "/index.html"
     }
   ],
-
-
-    "src/pages/api/**/*.js": {
-      "runtime": "nodejs18.x"
-    }
-  ,
   "regions": ["iad1"],
   "build": {
     "env": {
       "NODE_ENV": "production"
     }
   },
+  "github": {
+    "silent": true
+  },
+    
+  
   "github": {
     "silent": true
   }
