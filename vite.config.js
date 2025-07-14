@@ -8,8 +8,19 @@ export default defineConfig(() => {
   return {
     build: {
       outDir: 'build',
+      // Optimize build performance
+      rollupOptions: {
+        output: {
+          manualChunks: {
+            vendor: ['react', 'react-dom', 'react-router-dom'],
+          },
+        },
+      },
+      // Compress assets
+      assetsInlineLimit: 4096,
+      // Optimize chunk size
+      chunkSizeWarningLimit: 500,
     },
-    // plugins: [react()],
     plugins: [
         babelMacros(),
         {
@@ -39,6 +50,8 @@ export default defineConfig(() => {
                 '.js': 'jsx',
             }
         },
-    }
+    },
+    // Optimize asset handling
+    assetsInclude: ['**/*.jpg', '**/*.jpeg', '**/*.png', '**/*.gif', '**/*.svg'],
   };
 });

@@ -1,1 +1,218 @@
-node_modules
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Build outputs
+build/
+dist/
+.vite/
+*.tsbuildinfo
+.turbo/
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+.nyc_output
+
+# Dependency directories
+jspm_packages/
+web_modules/
+
+# Optional npm cache directory
+.npm
+.eslintcache
+.stylelintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Environment variables
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# Parcel cache
+.cache
+.parcel-cache
+
+# Next.js build output
+.next
+out
+
+# Nuxt.js build / generate output
+.nuxt
+
+# Gatsby files
+.cache/
+
+# Storybook build outputs
+.out
+.storybook-out
+
+# Temporary folders
+tmp/
+temp/
+.tmp/
+.temporary/
+
+# Logs
+logs
+*.log
+
+# Editor directories and files
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Large media files - MAIN ISSUE FOR SLOW DEPLOYMENT
+# Large images (keep optimized web versions only)
+*.psd
+*.ai
+*.eps
+*.tiff
+*.tif
+*.bmp
+*.raw
+*.cr2
+*.nef
+*.orf
+*.sr2
+
+# Large videos
+*.mov
+*.mp4
+*.avi
+*.wmv
+*.flv
+*.webm
+*.mkv
+*.m4v
+*.3gp
+*.3g2
+*.rm
+*.swf
+
+# Large audio files
+*.wav
+*.flac
+*.aac
+*.ogg
+*.wma
+*.m4a
+
+# Archive files
+*.zip
+*.rar
+*.7z
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+
+# Document files
+*.pdf
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+*~
+
+# Test files
+test-results/
+test-output/
+tests/screenshots/
+tests/videos/
+
+# IDE files
+*.iml
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Vercel
+.vercel
+
+# Turbo
+.turbo
+
+# Sentry
+.sentryclirc
+
+# Large or unoptimized images in src/images (if they exist)
+# Comment out specific images you want to keep
+# src/images/**/*.jpg
+# src/images/**/*.jpeg
+# src/images/**/*.png
+# src/images/**/*.gif
+# src/images/**/*.svg
+
+# Keep only optimized images under specific size
+# Add specific large image files here
+src/images/large-*
+src/images/original-*
+src/images/unoptimized-*
+
+# Any file over 1MB (GitHub has 100MB limit, but smaller is better for deployment)
+# You'll need to manually identify and add these
