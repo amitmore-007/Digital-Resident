@@ -53,5 +53,12 @@ export default defineConfig(() => {
     },
     // Optimize asset handling
     assetsInclude: ['**/*.jpg', '**/*.jpeg', '**/*.png', '**/*.gif', '**/*.svg'],
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: `@import "@fortawesome/fontawesome-free/css/all.min.css";`
+        }
+      }
+    }
   };
 });
